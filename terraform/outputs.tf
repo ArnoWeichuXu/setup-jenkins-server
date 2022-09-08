@@ -1,5 +1,5 @@
-output "web_address" {
-   description = "The web address of the Jenkins server"
-   value = module.dns.web_address
+output "public_ip" {
+   description = "Public IP of the Jenkins server"
+   value = module.ec2_instance.public_ip
    sensitive = true
 }

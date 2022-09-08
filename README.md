@@ -1,1 +1,1 @@
-# setup_jenkins_server
+# setup jenkins server on EC2
