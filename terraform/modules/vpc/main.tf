@@ -14,6 +14,7 @@ resource "aws_vpc" "project_vpc" {
 
   tags = {
     Name = "${var.project_name}_vpc"
+    Project = "${var.project_name}"
   }
 }
 
@@ -23,6 +24,7 @@ resource "aws_internet_gateway" "project_igw" {
 
   tags = {
     Name = "${var.project_name}_igw"
+    Project = "${var.project_name}"
   }
 }
 
@@ -53,11 +55,12 @@ resource "aws_subnet" "project_subnet" {
 
   tags = {
     Name = "${var.project_name}_subnet"
+    Project = "${var.project_name}"
   }
 }
 
 # Attaching the public Subnet with public Route Table
-resource "aws_route_table_association" "public" {
+resource "aws_route_table_association" "project_assciation" {
   route_table_id = aws_route_table.project_public_rt.id
   subnet_id = aws_subnet.project_subnet.id
 }

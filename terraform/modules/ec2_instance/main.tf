@@ -41,10 +41,11 @@ resource "aws_instance" "project_jenkins_server" {
 
    key_name = aws_key_pair.project_key_pair.key_name
    #TODO:update this part using Ansible
-   user_data = "${file("${path.module}/install_jenkins.sh")}"
+   #user_data = "${file("${path.module}/install_jenkins.sh")}"
 
    tags = {
       Name = "${var.project_name}_jenkins_server"
+      Project = "${var.project_name}"
    }
 }
 
@@ -61,5 +62,6 @@ resource "aws_eip" "project_jenkins_eip" {
 
    tags = {
       Name = "${var.project_name}_jenkins_eip"
+      Project = "${var.project_name}"
    }
 }

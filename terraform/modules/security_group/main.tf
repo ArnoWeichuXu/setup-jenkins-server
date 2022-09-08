@@ -46,5 +46,6 @@ resource "aws_security_group" "project_jenkins_sg" {
 
   tags = {
     Name = "${var.project_name}_jenkins_sg"
+    Project = "${var.project_name}"
   }
 }
