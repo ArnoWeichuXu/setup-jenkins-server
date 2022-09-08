@@ -38,10 +38,7 @@ resource "aws_instance" "project_jenkins_server" {
    subnet_id = var.public_subnet
    instance_type = var.instance_type_block
    vpc_security_group_ids = [var.security_group]
-
    key_name = aws_key_pair.project_key_pair.key_name
-   #TODO:update this part using Ansible
-   #user_data = "${file("${path.module}/install_jenkins.sh")}"
 
    tags = {
       Name = "${var.project_name}_jenkins_server"
