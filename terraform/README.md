@@ -1,4 +1,4 @@
-#Build up the required infrastructure for a Jenkins server using Terraform
+# Build up the required infrastructure for a Jenkins server using Terraform
 
 ## 1. VPC
 
