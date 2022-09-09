@@ -1,4 +1,4 @@
-# Setup Jenkins Server on EC2
+# Build up Jenkins Server on EC2
 ### Before you run the script
 ##### 1. change the values in `variables.tf` for the following variables
 - "instance_type_block"
