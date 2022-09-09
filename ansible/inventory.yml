@@ -2,7 +2,7 @@ jenkins_VMs:
   hosts:
     AWS: 
       ansible_host: 54.79.211.225
-    Azure:
-      ansible_host:
-    GCP:
-      ansible_host:
+    #Azure:
+      #ansible_host:
+    #GCP:
+      #ansible_host:
