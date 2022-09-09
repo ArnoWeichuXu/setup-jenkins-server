@@ -41,7 +41,7 @@ resource "aws_instance" "main" {
   key_name               = aws_key_pair.instance_kp.key_name
 
   tags = {
-    Name    = "${var.project_name}_jenkins_instance"
+    Name    = "jenkins_instance"
     Project = "${var.project_name}"
   }
 }
