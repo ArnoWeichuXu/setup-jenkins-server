@@ -1,0 +1,8 @@
+[jenkins_ec2]
+# input EC2 jenkins hosts here
+54.79.211.225
+
+[jenkins_azure]
+
+[jenkins_gcp]
+
