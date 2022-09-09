@@ -1,1 +1,0 @@
-# setup jenkins server on EC2
