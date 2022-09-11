@@ -34,6 +34,7 @@ module "instance" {
   source              = "./modules/instance"
   project_name        = var.project_name_block
   account_id          = var.account_id
+  ssh_username        = var.ssh_username
   instance_type_block = var.instance_type_block
   vpc_name            = module.network.vpc_name
   subnet_name         = module.network.subnet_name
