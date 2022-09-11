@@ -16,7 +16,7 @@ data "aws_route53_zone" "dns_zone" {
 # Creating the Type A record
 resource "aws_route53_record" "dns_A_record" {
   zone_id = data.aws_route53_zone.dns_zone.zone_id
-  name    = "jenkins.${data.aws_route53_zone.dns_zone.name}"
+  name    = "jenkinsaws.${data.aws_route53_zone.dns_zone.name}"
   type    = "A"
   ttl     = 60
   records = [var.public_ip]
